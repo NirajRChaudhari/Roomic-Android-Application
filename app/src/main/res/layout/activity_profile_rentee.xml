@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_layout_relative1">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icons_left_arrow"
+        android:background="#fffacd"
+        android:id="@+id/imagebutton_profile_rentee_back"/>
+
+    <TextView
+        android:layout_width="309dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="50dp"
+        android:background="#fffacd"
+        android:gravity="center"
+        android:text="Your Info"
+        android:textAlignment="center"
+        android:textColor="#cd5c5c"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginLeft="303dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#fffacd"/>
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginTop="70dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="#fffacd"
+         />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:clickable="true"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#FFFFFFFF"
+        android:id="@+id/profile_image_rentee"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image"
+        android:background="#fffacd"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+
+        <ImageButton
+            android:id="@+id/profile_rentee_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+
+            android:background="#cd5c5c"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <EditText
+            android:id="@+id/profile_rentee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="Siddhant Patil"
+            android:textColor="@color/Black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:focusable="false"/>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_layout_relative2"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/profile_rentee_address_nouse"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Address : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"/>
+
+            <EditText
+                android:id="@+id/profile_rentee_address"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Flat no 103,Akshay prime apartment,near Infinity inet Solutions Vadgaon,Pune ,Maharashtra."
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_contact_nouse"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Contact : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_contact"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="8605239227"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_emailid_nouse"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="EmailId : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_emailid"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="patilsiddhant1999@gmail.com"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_age_nouse"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Age : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_age"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="20"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_gender_nouse"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Gender : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_gender"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Male"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_qualification_nouse"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="Qualification/studying: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_qualification"
+                android:layout_width="227dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="B.E."
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_rentee_addiction_nouse"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Addiction : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#cd5c5c"
+                />
+
+            <EditText
+                android:id="@+id/profile_rentee_addiction"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="None"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

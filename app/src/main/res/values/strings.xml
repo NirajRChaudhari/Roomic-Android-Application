@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name" translatable="false">ROOMIC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="create_new_account" translatable="false">Create New Account ?</string>
+    <string name="i_am" translatable="false">I am</string>
+    <string name="enter_details" translatable="false">ENTER DETAILS :-</string>
+    <string name="password" translatable="false">PASSWORD</string>
+    <string name="email_id">EMAIL - ID</string>
+    <string name="login">LOG IN</string>
+    <string name="room_assistant">ROOM ASSISTANT</string>
+    <string name="you_are_just_one_step_away_from_your_desirable_room">You are just One Step AWAY from your Desirable ROOM !!!!</string>
+
+
+    <string name="title_activity_details__map">Map</string>
+    <string name="title_activity_owner__tabbed_">Owner_Tabbed_Activity</string>
+    <string name="default_prompt">Choose your status</string>
+
+    <array name="size">
+        <item>Click to SELECT FLAT</item>
+        <item>1BHK</item>
+        <item>2BHK</item>
+        <item>3BHK</item>
+        <item>1RK</item>
+        <item>1R</item>
+        <item>4BHK or else</item>
+    </array>
+
+    <string-array name="status">
+        <item>Single Person with NO Room</item>
+        <item>Single Person with Room</item>
+        <item>Group of people with NO Room</item>
+        <item>Group of people with Room</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps__room">Map</string>
+
+
+</resources>
